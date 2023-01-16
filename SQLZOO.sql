@@ -53,14 +53,10 @@ where gdp > all(select gdp from world where continent ='Europe' AND GDP>0)
 
 
 
-7.
-Find the largest country (by area) in each continent, show the continent, the name and the area:
-
 
 
 
 8.First country of each continent (alphabetically)
-
 
 SELECT continent,name
 FROM world as x
@@ -95,15 +91,13 @@ group by continent
 
 
 8. Counting big continents
-8.
+
 List the continents that have a total population of at least 100 million.
 
 select continent
 from world
 group by continent
 having sum(population) >=100000000
-
-
 
 
 
